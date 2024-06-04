@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./Calculator-app/style.css">
     <link rel="stylesheet" href="./Calculator-app/responsive.css">
@@ -19,39 +23,39 @@
                 <input readonly id="display" class="display"/>
             </div>
             <div id="1st__line--btns" class="first__line--btns">
-                <p class="ac--btn">AC</p>
-                <p class="del--btn">DEL</p>
-                <p class="modules--btn">%</p>
-                <p class="reminder--btn">/</p>
+                <button class="ac--btn">AC</button>
+                <button class="del--btn disable">DEL</button>
+                <button onclick="appendDisplay('%')" class="modules--btn disable">%</button>
+                <button onclick="appendDisplay('/')" class="reminder--btn disable"><i class="fa-solid fa-divide"></i></button>
             </div>
             <div id="2nd__line--btns" class="second__line--btns">
-                <p class="seven--btn">7</p>
-                <p class="eight--btn">8</p>
-                <p class="nine--btn">9</p>
-                <p class="asterisk--btn">*</p>
+                <button onclick="appendDisplay('7')" class="seven--btn disable">7</button>
+                <button onclick="appendDisplay('8')" class="eight--btn disable">8</button>
+                <button onclick="appendDisplay('9')" class="nine--btn disable">9</button>
+                <button onclick="appendDisplay('*')" class="asterisk--btn disable"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div id="3nd__line--btns" class="third__line--btns">
-                <p class="four--btn">4</p>
-                <p class="five--btn">5</p>
-                <p class="six--btn">6</p>
-                <p class="minus--btn">-</p>
+                <button onclick="appendDisplay('4')" class="four--btn disable">4</button>
+                <button onclick="appendDisplay('5')" class="five--btn disable">5</button>
+                <button onclick="appendDisplay('6')" class="six--btn disable">6</button>
+                <button onclick="appendDisplay('-')" class="minus--btn disable"><i class="fa-solid fa-minus"></i></button>
             </div>
             <div id="4th__line--btns" class="fourth__line--btns">
-                <p class="one--btn">1</p>
-                <p class="two--btn">2</p>
-                <p class="three--btn">3</p>
-                <p class="plus--btn">+</p>
+                <button onclick="appendDisplay('1')" class="one--btn disable">1</button>
+                <button onclick="appendDisplay('2')" class="two--btn disable">2</button>
+                <button onclick="appendDisplay('3')" class="three--btn disable">3</button>
+                <button onclick="appendDisplay('+')" class="plus--btn disable"><i class="fa-regular fa-plus"></i></button>
             </div>
             <div id="5th__line--btns" class="fifth__line--btns">
-                <p class="dbzero--btn">00</p>
-                <p class="zero--btn">0</p>
-                <p class="dot--btn">.</p>
-                <p class="equal--btn">=</p>
+                <button onclick="appendDisplay('00')" class="dbzero--btn disable">00</button>
+                <button onclick="appendDisplay('0')" class="zero--btn disable">0</button>
+                <button onclick="appendDisplay('.')" class="dot--btn disable">.</button>
+                <button onclick="result()" class="equal--btn disable">=</button>
             </div>
         </div>
     </div>
 
 
-    <script src="./script.js"></script>
+    <script src="./Calculator-app/script.js"></script>
 </body>
 </html>

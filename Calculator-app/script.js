@@ -1,3 +1,7 @@
+// Alert massage
+alert("Notice : This project is still under construction.");
+
+
 const display = document.getElementById("display");
 const willBeDisables = document.querySelectorAll(".disable");
 
