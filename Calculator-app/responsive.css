@@ -6,10 +6,13 @@
     .display{
         width: 335px;
     }
-    .calculator__body > div > p{
+    .calculator__body > div > button{
         margin: 15px 10px;
         width: 65px;
         height: 65px;
+    }
+    .syntaxError{
+        font-size: 42px;
     }
 }
 @media screen and (max-width: 550px) {
@@ -28,12 +31,15 @@
         height: 90px;
         font-size: 42px;
     }
-    .calculator__body > div > p{
+    .calculator__body > div > button{
         margin: 12px 10px;
         width: 52px;
         height: 52px;
         font-size: 21px;
         box-shadow: 2px 0px 16px black, -1px -1px 6px rgb(187, 187, 187);
+    }
+    .syntaxError{
+        font-size: 37px;
     }
 }
 @media screen and (max-width: 355px) {
@@ -56,10 +62,13 @@
         margin-top: 8px;
         font-size: 39px;
     }
-    .calculator__body > div > p{
+    .calculator__body > div > button{
         width: 48px;
         height: 48px;
         box-shadow: 2px 0px 12px black, -1px -1px 6px rgb(187, 187, 187);
+    }
+    .syntaxError{
+        font-size: 34px;
     }
 }
 @media screen and (max-width: 305px) {
@@ -72,9 +81,12 @@
         font-size: 35px;
         height: 81px;
     }
-    .calculator__body > div > p{
+    .calculator__body > div > button{
         width: 41px;
         height: 41px;
         font-size: 18px;
+    }
+    .syntaxError{
+        font-size: 28px;
     }
 }
